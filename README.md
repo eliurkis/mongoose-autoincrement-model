@@ -1,14 +1,6 @@
-# mongoose-auto-increment
-
-[![Build Status](https://travis-ci.org/codetunnel/mongoose-auto-increment.png?branch=master)](https://travis-ci.org/codetunnel/mongoose-auto-increment)
-[![Dependencies Status](https://gemnasium.com/codetunnel/mongoose-auto-increment.png)](https://gemnasium.com/codetunnel/mongoose-auto-increment)
-[![NPM version](https://badge.fury.io/js/mongoose-auto-increment.png)](http://badge.fury.io/js/mongoose-auto-increment)
+# mongoose-autoincrement-model
 
 > Mongoose plugin that auto-increments any ID field on your schema every time a document is saved.
-
----
-
-> This is the module used by [mongoose-simpledb](https://github.com/codetunnel/mongoose-simpledb) to increment Number IDs. You are perfectly able to use this module by itself if you would like. However, if you're looking to make your life easier when using [mongoose](http://mongoosejs.com/) then I highly recommend you check out simpledb. It's a small wrapper around mongoose but it makes it extremely easy to deal with your models and draws a clear path for how to use mongoose in your application.
 
 ## Getting Started
 
@@ -22,7 +14,7 @@ mongoose connection and pass `autoIncrement.plugin` to the `plugin()` function o
 ````js
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema,
-    autoIncrement = require('mongoose-auto-increment');
+    autoIncrement = require('mongoose-autoincrement-model');
 
 var connection = mongoose.createConnection("mongodb://localhost/myDatabase");
 
